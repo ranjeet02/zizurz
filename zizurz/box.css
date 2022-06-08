@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.box1{
+    width: 800px;
+    height: 400px;
+    background: linear-gradient(rgb(248, 118, 5), white, green);
+    padding: 25px;
+    overflow:auto;
+    border: 6px solid;
+    border-image: linear-gradient(rgb(4, 251, 62), rgb(252, 252, 251), rgb(221, 127, 4)) 1;
+    margin: 0 auto;
+    color:rgb(186, 251, 9) !important;
+    /* opacity: 0.7; */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    
+}
+.box2{
+    width: 800px;
+    height: 400px;
+    background-color: rgba(137, 43, 226, 0.697);
+    margin-top: 10px;
+    padding: 25px;
+    background: linear-gradient(green, pink, skyblue);
+    border: 6px solid;
+    border-image: linear-gradient(blue,violet,orange) 1;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+}
+.box2 h1{
+    width: 270px;
+    background-color:red ;
+    color: brown;
+    /* font-style: italic; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 210px;
+
+}
+.details{
+    background-color: rgba(165, 42, 42, 0.734);
+    /* margin: 0 auto; */
+    border: 6px solid;
+    border-image: linear-gradient(rgb(90, 12, 247), green, yellow) 1;
+}
+.value{
+    margin-left: 100px;
+    line-height: 60px;
+}
+/* .vid{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+} */
+.anything{
+    width: 600px;
+    height: 400px;
+    background-color: rgba(165, 42, 42, 0.727);
+    position: relative;
+    margin-left: 100px;
+}
+.child1{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+}
+.first{
+    top: 0;
+    left: 0;
+    z-index: -1; /* this is used to change the position of the box.-1=back,0=middle,1=front*/
+    background-color: rgb(250, 93, 8);
+    text-align: center;
+}
+.second{
+    top: 10%;
+    left: 10%;
+    z-index: 0; /* this is used to change the position of the box.-1=back,0=middle,1=front*/
+    background-color: rgba(226, 241, 21, 0.805);
+    text-align: center;
+    
+}
+.third{
+    top: 20%;
+    left: 20%;
+    z-index: 0; /* this is used to change the position of the box.-1=back,0=middle,1=front*/
+    background-color: rgb(255, 143, 6);
+    text-align: center;
+}
+.fourth{
+    top: 30%;
+    left: 30%;
+    z-index: 0; /* this is used to change the position of the box.-1=back,0=middle,1=front*/
+    background-color: rgb(6, 255, 114);
+    text-align: center;
+}
+.parent{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(249, 12, 52, 0.807);
+    /* margin: 0 auto; */
+  
+}
+.childA{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(137, 206, 17);
+    position: relative;
+    animation-name: Ranjeet; /*Here name is identifiers in both the animation-name*/
+    /* animation-name: Ranjeet2; */
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    /* animation-delay: 5s; */
+
+}
+@keyframes Ranjeet {
+    from{
+        width:400px;
+    }
+    to{
+        width:1500px;
+    }
+}
+/* @keyframes Ranjeet2 {
+    0%{
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 250px;
+        left: 0px;
+    }
+} */
+
